@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .btn-primary {
+        @apply flex  items-center justify-center text-white bg-brandSecondary w-full hover:bg-brandHover rounded-lg py-1 uppercase font-bold
+    }
+}
+@layer base {
+    * {
+        @apply text-fontBase font-['Open_Sans']
+
+    }
+
+    p {
+        @apply text-[12px] md:text-[14px] mb-4
+    }
+
+    li {
+        @apply text-[12px] md:text-[14px] mb-2
+    }
+
+    h1 {
+        @apply font-['Sansita_Swashed']
+    }
+
+    h2 {
+        @apply font-bold text-[20px] md:text-[50px]  text-brandSecondary md:leading-[55px] mb-3 font-['Sansita_Swashed']
+    }
+
+    h3 {
+        @apply font-bold text-[20px] md:text-[25px]  text-brandSecondary leading-[30px] mb-3 font-['Sansita_Swashed']
+    }
+
+    h4 {
+        @apply font-bold text-[14px] md:text-[20px] text-fontBase md:leading-[24px] italic mb-3 md:mb-8 font-['Sansita_Swashed']
+    }
+
+
+}
+
+
+html {
+    over: scroll;
+    scroll-snap-type: y mandatory
+}
+
+.snap {
+    scroll-snap-align: start;
+
+}
+
+.grayscale {
+    filter: grayscale(80%) saturate(60%);
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('assets/fonts/SansitaSwashed-Light.woff2') format('woff2'),
+    url('assets/fonts/SansitaSwashed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('assets/fonts/SansitaSwashed-Bold.woff2') format('woff2'),
+    url('assets/fonts/SansitaSwashed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('assets/fonts/SansitaSwashed-Medium.woff2') format('woff2'),
+    url('assets/fonts/SansitaSwashed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('assets/fonts/SansitaSwashed-Regular.woff2') format('woff2'),
+    url('assets/fonts/SansitaSwashed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('assets/fonts/SansitaSwashed-Black.woff2') format('woff2'),
+    url('assets/fonts/SansitaSwashed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('assets/fonts/SansitaSwashed-SemiBold.woff2') format('woff2'),
+    url('assets/fonts/SansitaSwashed-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';
+    src: url('assets/fonts/SansitaSwashed-ExtraBold.woff2') format('woff2'),
+    url('assets/fonts/SansitaSwashed-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-Light.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-BoldItalic.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-MediumItalic.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-Italic.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-LightItalic.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-Medium.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+    url('assets/fonts/OpenSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+
